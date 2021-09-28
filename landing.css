@@ -1,0 +1,56 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Quicksand', sans-serif;
+}
+
+/*nav*/
+nav{
+	display: flex;
+	background-color: rgb(200, 100, 70);
+	justify-content: space-around;
+	color: white;
+	height: 50px;
+	align-items: center;
+}
+
+nav .logo{
+	font-family: 'Gluten', cursive;
+	letter-spacing: 3px;
+}
+
+nav ul{
+	display: flex;
+	list-style: none;
+	width: 40%;
+	justify-content: space-between;
+}
+
+nav ul li a{
+	color: white;
+	text-decoration: none;
+}
+nav ul li a:hover{
+	color: lightgrey;
+}
+
+.menu-toogle{
+	cursor: pointer;
+	display: none;
+}
+@media screen and (max-width: 768px){
+	nav ul{
+		width: 50%;
+	}
+}
+
+@media screen and (max-width: 576px){
+	.menu-toogle{
+		display: flex;
+	}
+	nav ul{
+		display: none;
+	}
+}
